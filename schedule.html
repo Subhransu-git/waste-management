@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/earth1.png" type="image/x-icon"/>
+
+
+</head>
+<body>
+  <div class="main">
+    <img src="assets/earth1.png" alt="logo">
+  <h1>Waste management <br> And <br> Sanitation Services </h1> 
+  
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Schedule</button>
+    <div class="dropdown-content">
+      <a href="schedule.html#schedule">Collection Schedule</a>
+      <a href="schedule.html#pickup-schedule">Pick-up Schedule</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Service</button>
+    <div class="dropdown-content">
+      <a href="request.html#request">Request a Pickup</a>
+      <a href="request.html#request">Report missed Pickup</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Contact us</button>
+    <div class="dropdown-content">
+      <a href="index.html#contact">Contact us</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">About us</button>
+    <div class="dropdown-content">
+      <a href="index.html#tips">Recycling Tips</a>
+      <a href="index.html#recent">Recent campaigns</a>
+    </div>
+  </div> 
+  
+</div>
+
+<section id="pickup-schedule">
+  <div class="schedule-section" id="schedule">
+      <h2>Pickup Schedule</h2>
+      
+      <p>Select your area and waste type to view </p>
+    
+      <div class="schedule-filter">
+        <label for="area">Select Area:</label>
+        <select id="area">
+          <option value="Patia">Patia</option>
+          <option value="Chandrasekharpur">Chandrasekharpur</option>
+          <option value="Kalinganagar">Kalinganagar</option>
+          <option value="Khandagiri">Khandagiri</option>
+        </select>
+    
+        <label for="waste-type">Select Waste Type:</label>
+        <select id="waste-type">
+          <option value="general">General Waste</option>
+          <option value="recyclable">Recyclable Waste</option>
+          <option value="organic">Organic Waste</option>
+          <option value="hazardous">Hazardous Waste</option>
+        </select>
+    
+        <a href="https://calendar.google.com/calendar/u/0/r/eventedit?dates=20241107T090000Z/20241107T100000Z&text=Event+Title&details=Event+Details+Here&location=Location+Here" target="_blank">
+          <button>Show Schedule</button>
+        </a>
+        <!-- <button id="showSchedule">Show Schedule</button> -->
+      </div>
+    </section>
+
+<!-- Schedule Section -->
+ <section id="schedule">
+<div class="schedule-section">
+    <h2>Garbage Collection Schedule</h2>
+   
+    <div class="search-schedule">
+      
+      <label for="address">Enter your address or postal code:</label>
+      <input type="text" id="address" placeholder="Enter your Address">
+      <button type="button" onclick="searchSchedule()">Search</button>
+    </div>
+  
+    <div class="area-schedule">
+      <p>Click on your area on the map below to see your collection days:</p>
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113818.7274181188!2d85.73805123197226!3d20.300864868626256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d2d5170aa5%3A0xfc580e2b68b33fa8!2sBhubaneswar%2C%20Odisha!5e1!3m2!1sen!2sin!4v1730916202089!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+ 
+      
+        <!-- Display Schedule -->
+       
+  
+   
+  <script src="script.js"></script>
+
+  <footer>
+    <div class="footer-content">
+        <h3>WASTE MANAGEMENT AND SANITATION  SERVICES</h3>
+       
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 wmass. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

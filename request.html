@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/earth1.png" type="image/x-icon"/>
+
+
+</head>
+<body>
+  <div class="main">
+    <img src="assets/earth1.png" alt="logo">
+  <h1>Waste management <br> And <br> Sanitation Services </h1> 
+  
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    
+    <div class="dropdown">
+      <button class="dropbtn">Schedule</button>
+      <div class="dropdown-content">
+        <a href="schedule.html#schedule">Collection Schedule</a>
+        <a href="schedule.html#pickup-schedule">Pick-up Schedule</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Service</button>
+      <div class="dropdown-content">
+        <a href="request.html#request">Request a Pickup</a>
+        <a href="request.html#request">Report missed Pickup</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">Contact us</button>
+      <div class="dropdown-content">
+        <a href="index.html#contact">Contact us</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">About us</button>
+      <div class="dropdown-content">
+        <a href="index.html#tips">Recycling Tips</a>
+        <a href="index.html#recent">Recent campaigns</a>
+      </div>
+    </div> 
+    
+  </div>
+
+
+<section id="request">
+   
+
+    <div class="pickup-request-section" id="pickup-request">
+      <h2>Request/Report a Pickup :</h2>
+      
+      <form id="pickupRequestForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+    
+        <label for="address">Pickup Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address" required>
+    
+        <label for="waste-type">Waste Type:</label>
+        <select id="waste-type" name="wasteType" required>
+          <option value="general">General Waste</option>
+          <option value="recyclable">Recyclable Waste</option>
+          <option value="organic">Organic Waste</option>
+          <option value="hazardous">Hazardous Waste</option>
+        </select>
+    
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="date" id="pickup-date" name="pickupDate" required>
+    
+        <label for="notes">Additional Notes (optional):</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Any specific instructions..."></textarea>
+    
+        <button type="submit">Submit Pickup Request</button>
+      </form>
+    
+      <div id="confirmationMessage" style="display:none;">
+        <p>Thank you! Your pickup request has been submitted successfully.</p>
+      </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <h3>WASTE MANAGEMENT AND SANITATION  SERVICES</h3>
+       
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 wmass. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
